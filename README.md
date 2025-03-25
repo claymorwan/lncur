@@ -85,6 +85,6 @@ From the script directly
 ```shell
 git clone https://github.com/claymorwan/lncur.git
 cd lncur
-pyinstaller lncur.py
+pyinstaller --onefile lncur.py
 ```
 3. The path to the executable will be `./dist/lncur`
