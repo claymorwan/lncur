@@ -1,5 +1,5 @@
 dist/
-lncur.spec
+*.spec
 .idea/
 build/
 .venv/

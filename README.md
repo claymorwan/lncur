@@ -38,12 +38,13 @@ Root of your super cool ported theme :D
 | ![Move.png](assets/wincur/Move.png)                                   | Move                     | `fleur`       |
 | ![Unavailable.png](assets/wincur/Unavailable.png)                     | Unavailable              | `not-allowed` |
 | ![Link_select.png](assets/wincur/Link_select.png)                     | Link select              | `pointer`     |
-| ![Working_in_background.png](assets/wincur/Working_in_background.png) | Working in background    | `progress`    |
+| ![Working_in_background.gif](assets/wincur/Working_in_background.gif) | Working in background    | `progress`    |
 | ![Help_select.png](assets/wincur/Help_select.png)                     | Help select              | `help`        |
 | ![Pen.png](assets/wincur/Pen.png)                                     | The pen one idk the name | `pencil`      |
 > All of the names are taken from the KDE breeze cursor theme </br>
 > Cursors image from [Microsoft](https://learn.microsoft.com/en-us/windows/win32/menurc/about-cursors) 
- 
+You can remove the pin and person cursors as they're not used.
+
  4. Convert the files to X cursor files using [win2xcur](https://github.com/quantum5/win2xcur), you can convert them all by going in the `cursors` directory and run
 ```shell
 win2xcur *
