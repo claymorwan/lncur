@@ -1,12 +1,12 @@
-import os
-import pathlib
+import os, pathlib
 
-str_dir = pathlib.Path().resolve() #str(input())
-print(str_dir)
+# Get working directory
+str_dir = pathlib.Path().resolve()
+print(f"Working directory : {str_dir}")
 dir = os.fsencode(str_dir)
 
 syms = {
-    "default": ['arrow', 'left_ptr', 'size-bdiag', 'size-fdiag', 'size-hor', 'size-ver', 'top_left_arrow', 'copy', 'dnd-copy'],
+    "default": ['arrow', 'left_ptr', 'size-bdiag', 'size-fdiag', 'size-hor', 'size-ver', 'top_left_arrow', 'copy', 'dnd-copy', 'openhand', 'grab', 'alias'],
     "pointer": ['hand1', 'hand2', 'pointing_hand', ],
     "crosshair": ['cross', 'tcross'],
     "fleur": ['size_all', 'grabbing', 'closehand', 'dnd-none', 'move', 'dnd-move'],
@@ -24,11 +24,28 @@ syms = {
 }
 
 def link_files(file, symlist):
+    """Create symlinks"""
     for sym in symlist:
         os.symlink(file, sym)
+    print(f"Created symlinks for {file}")
 
-os.system('find ./ -maxdepth 1 -type l -delete')
+def list_syms(dirname):
+    """List of symlinks"""
+    sym = []
+    for name in os.listdir(dirname):
+        if name not in (os.curdir, os.pardir):
+            full = os.path.join(dirname, name)
+            if os.path.islink(full):
+                sym.append(name)
+    return sym
 
+# Remove symlinks
+print("Removing symlinks")
+for e in list_syms(str_dir):
+    if os.path.exists(e):
+        os.remove(e)
+
+# Loop to create symlinks
 for file in os.listdir(dir):
     filename = os.fsdecode(file)
 
