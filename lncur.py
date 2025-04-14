@@ -1,8 +1,9 @@
-import os, pathlib
+import os, pathlib, argparse
+
+version = "1.0.2"
 
 # Get working directory
 str_dir = pathlib.Path().resolve()
-print(f"Working directory : {str_dir}")
 dir = os.fsencode(str_dir)
 
 syms = {
@@ -23,92 +24,113 @@ syms = {
     "wait": ['watch'],
 }
 
-def link_files(file, symlist):
-    """Create symlinks"""
-    for sym in symlist:
-        os.symlink(file, sym)
-    print(f"Created symlinks for {file}")
+def lncur():
+    """Links all the cursors files."""
 
-def list_syms(dirname):
-    """List of symlinks"""
-    sym = []
-    for name in os.listdir(dirname):
-        if name not in (os.curdir, os.pardir):
-            full = os.path.join(dirname, name)
-            if os.path.islink(full):
-                sym.append(name)
-    return sym
+    print(f"Working directory : {str_dir}")
+    
+    def link_files(file, symlist):
+        """Create symlinks"""
+        for sym in symlist:
+            os.symlink(file, sym)
+        print(f"Created symlinks for {file}")
 
-# Remove symlinks
-print("Removing symlinks")
-for e in list_syms(str_dir):
-    if os.path.exists(e):
-        os.remove(e)
+    def list_syms(dirname):
+        """List of symlinks"""
+        sym = []
+        for name in os.listdir(dirname):
+            if name not in (os.curdir, os.pardir):
+                full = os.path.join(dirname, name)
+                if os.path.islink(full):
+                    sym.append(name)
+        return sym
 
-# Loop to create symlinks
-for file in os.listdir(dir):
-    filename = os.fsdecode(file)
+    # Remove symlinks
+    print("Removing symlinks")
+    for e in list_syms(str_dir):
+        if os.path.exists(e):
+            os.remove(e)
 
-    # default
-    if filename.startswith("default"):
-        link_files(filename, syms[filename])
+    # Loop to create symlinks
+    for file in os.listdir(dir):
+        filename = os.fsdecode(file)
 
-    # pointer
-    if filename.startswith("pointer"):
-        link_files(filename, syms[filename])
+        # default
+        if filename.startswith("default"):
+            link_files(filename, syms[filename])
 
-    # crosshair
-    if filename.startswith("crosshair"):
-        link_files(filename, syms[filename])
+        # pointer
+        if filename.startswith("pointer"):
+            link_files(filename, syms[filename])
 
-    # fleur
-    if filename.startswith("fleur"):
-        link_files(filename, syms[filename])
+        # crosshair
+        if filename.startswith("crosshair"):
+            link_files(filename, syms[filename])
 
-    # help
-    if filename.startswith("help"):
-        link_files(filename, syms[filename])
+        # fleur
+        if filename.startswith("fleur"):
+            link_files(filename, syms[filename])
 
-    # not-allowed
-    if filename.startswith("not-allowed"):
-        link_files(filename, syms[filename])
+        # help
+        if filename.startswith("help"):
+            link_files(filename, syms[filename])
 
-    # pencil
-    if filename.startswith("pencil"):
-        link_files(filename, syms[filename])
+        # not-allowed
+        if filename.startswith("not-allowed"):
+            link_files(filename, syms[filename])
 
-    # pencil
-    if filename.startswith("pencil"):
-        link_files(filename, syms[filename])
+        # pencil
+        if filename.startswith("pencil"):
+            link_files(filename, syms[filename])
 
-    # progress
-    if filename.startswith("progress"):
-        link_files(filename, syms[filename])
+        # pencil
+        if filename.startswith("pencil"):
+            link_files(filename, syms[filename])
 
-    # size_bdiag
-    if filename.startswith("size_bdiag"):
-        link_files(filename, syms[filename])
+        # progress
+        if filename.startswith("progress"):
+            link_files(filename, syms[filename])
 
-    # size_fdiag
-    if filename.startswith("size_fdiag"):
-        link_files(filename, syms[filename])
+        # size_bdiag
+        if filename.startswith("size_bdiag"):
+            link_files(filename, syms[filename])
 
-    # size_hor
-    if filename.startswith("size_hor"):
-        link_files(filename, syms[filename])
+        # size_fdiag
+        if filename.startswith("size_fdiag"):
+            link_files(filename, syms[filename])
 
-    # size_ver
-    if filename.startswith("size_ver"):
-        link_files(filename, syms[filename])
+        # size_hor
+        if filename.startswith("size_hor"):
+            link_files(filename, syms[filename])
 
-    # text
-    if filename.startswith("text"):
-        link_files(filename, syms[filename])
+        # size_ver
+        if filename.startswith("size_ver"):
+            link_files(filename, syms[filename])
 
-    # up-arrow
-    if filename.startswith("up-arrow"):
-        link_files(filename, syms[filename])
+        # text
+        if filename.startswith("text"):
+            link_files(filename, syms[filename])
 
-    # wait
-    if filename.startswith("wait"):
-        link_files(filename, syms[filename])
+        # up-arrow
+        if filename.startswith("up-arrow"):
+            link_files(filename, syms[filename])
+
+        # wait
+        if filename.startswith("wait"):
+            link_files(filename, syms[filename])
+
+parser = argparse.ArgumentParser()
+
+# Arguments
+parser.add_argument("-v", "--version", help="Prints version",
+                    action="store_true")
+parser.add_argument("-l", "--link", help="Symlinks cursors files",
+                    action="store_true")
+
+args = parser.parse_args()
+
+if args.version:
+    print(version)
+if args.link:
+    lncur()
+

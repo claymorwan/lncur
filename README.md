@@ -12,6 +12,14 @@ mv lncur ~/.local/bin/
 ```
 > Don't forget to add `~/.local/bin` to your $PATH !
 
+### Aur
+ln is also available on the AUR with your AUR helper (in my case [paru](https://github.com/Morganamilo/paru)).
+```shell
+$ paru -S lncur
+```
+
+### Running from file
+You can also just download/copy the [`lncur.py`](https://github.com/claymorwan/lncur/blob/main/lncur.py) file and put it directly in your working directory.
 # Usage
 ### Setup
 1. First you need to set up your cursor theme directory, you can refer to the step 5 of the [KDE guide for creating cursor theme](https://develop.kde.org/docs/features/cursor/#creating-a-theme-folder).
@@ -29,7 +37,7 @@ Root of your super cool ported theme :D
 | ![Normal_select.png](assets/wincur/Normal_select.png)                 | Normal select            | `default`     |
 | ![Text_select.png](assets/wincur/Text_select.png)                     | Text select              | `text`        |
 | ![Busy.png](assets/wincur/Busy.gif)                                   | Busy                     | `wait`        |
-| ![Precision_select.png](assets/wincur/Precision_select.png)           | Precision select         | `crosshair`   |                                                      
+| ![Precision_select.png](assets/wincur/Precision_select.png)           | Precision select         | `crosshair`   |
 | ![Alternate_select.png](assets/wincur/Alternate_select.png)           | Alternate select         | `up-arrow`    |
 | ![Diagonal_resize_1.png](assets/wincur/Diagonal_resize_1.png)         | Diagonal resize 1        | `size_fdiag`  |
 | ![Diagonal_resize_1.png](assets/wincur/Diagonal_resize_1.png)         | Diagonal resize 2        | `size_bdiag`  |
@@ -71,13 +79,21 @@ Root of ur super amazing theme :3
 └── index.theme
 ```
 ### Running the program
-Now you can use lncur to do all the symlinking:
-From command line (by instaling): just run `lncur` in your `cursors` directory :3
+Now you can use lncur to do all the symlinking by running lncur inside the directory where the `cursors` dir and running:
+```shell
+$ lncur -l
+```
 
-From the script directly
-1. Go into your `cursors` directory
-2. Paste the `lncur.py` file
-3. Run ```python lncur.py```
+All arguments:
+```shell
+$ lncur -h
+usage: lncur.py [-h] [-v] [-l]
+
+options:
+  -h, --help     show this help message and exit
+  -v, --version  Prints version
+  -l, --link     Symlinks cursors files
+```
 
 # Build
 
