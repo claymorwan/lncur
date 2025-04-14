@@ -9,7 +9,7 @@ syms = {
     "default": ['arrow', 'left_ptr', 'size-bdiag', 'size-fdiag', 'size-hor', 'size-ver', 'top_left_arrow', 'copy', 'dnd-copy', 'openhand', 'grab', 'alias'],
     "pointer": ['hand1', 'hand2', 'pointing_hand', ],
     "crosshair": ['cross', 'tcross'],
-    "fleur": ['size_all', 'grabbing', 'closehand', 'dnd-none', 'move', 'dnd-move'],
+    "fleur": ['all-scroll','size_all', 'grabbing', 'closehand', 'dnd-none', 'move', 'dnd-move'],
     "help": ['whats_this', 'question_arrow', 'left_ptr_help'],
     "not-allowed": ['circle', 'crossed_circle', 'pirate'],
     "pencil": [],
