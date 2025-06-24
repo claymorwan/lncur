@@ -119,18 +119,3 @@ def lncur():
         if filename.startswith("wait"):
             link_files(filename, syms[filename])
 
-parser = argparse.ArgumentParser()
-
-# Arguments
-parser.add_argument("-v", "--version", help="Prints version",
-                    action="store_true")
-parser.add_argument("-l", "--link", help="Symlinks cursors files",
-                    action="store_true")
-
-args = parser.parse_args()
-
-if args.version:
-    print(version)
-if args.link:
-    lncur()
-
