@@ -1,6 +1,6 @@
 # Lncur
 
-A simple python script to easily port Windows cursor packs to Linux!
+A simple python CLI to easily port Windows cursor packs to Linux!
 
 ## Install
 
