@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "lncur"
-version = "1.0.3"
-description = "Script to automate symlinking files when porting Windows cursors to Linux"
+version = "1.1.0"
+description = "CLI tool to automate symlinking files when porting Windows cursors to Linux"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

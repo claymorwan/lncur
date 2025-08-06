@@ -1,7 +1,7 @@
 # Lncur
 
-A simple python CLI to easily port Windows cursor packs to Linux!
-
+A simple python CLI to easily port Windows cursor packs to Linux! </br>
+[![](https://img.shields.io/github/v/release/claymorwan/lncur)](https://GitHub.com/claymorwan/lncur)
 ## Install
 
 ### Pypi
@@ -23,6 +23,8 @@ Root of your super cool ported theme :D
 ├── cursors
 └── index.theme
 ```
+> You can run `lncur -m` to quickly set up the directory 
+
 2. Put all of your Windows cursor theme files (.ico and/or .ani) in the `cursors` directory.
 3. Rename all your file like the following (here using default Windows cursor names, depending on what cursor theme you're porting, the files can be named different, it's fine just rename them):
 
@@ -80,12 +82,13 @@ lncur -l
 
 All arguments:
 ```shell
-usage: lncur.py [-h] [-v] [-l]
+usage: lncur [-h] [-v] [-l] [-m MAKE]
 
 options:
-  -h, --help     show this help message and exit
-  -v, --version  Prints version
-  -l, --link     Symlinks cursors files
+  -h, --help       show this help message and exit
+  -v, --version    Prints version
+  -l, --link       Symlinks cursors files
+  -m, --make MAKE  Make a cursor theme directory
 ```
 
 ## Dev
