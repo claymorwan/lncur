@@ -9,6 +9,29 @@ A simple python CLI to easily port Windows cursor packs to Linux! </br>
 pip install lncur
 ```
 
+### Nix flake
+Add this to your inputs
+```nix
+inputs.lncur.url = "git+https://codeberg.org/claymorwan/devnenvcp"
+```
+Then install the package like so:
+```nix
+environment.systemPackages = [
+  inputs.lncur.packages.${pkgs.stdenv.hostPlatform.system}.default
+];
+```
+for home-manager:
+```nix
+home.packages = [
+  inputs.lncur.packages.${pkgs.stdenv.hostPlatform.system}.default
+];
+```
+
+You can also directly run
+```sh
+nix run git+https://codeberg.org/claymorwan/lncur -- <args>
+```
+
 ### Aur
 lncur is also available on the AUR with your AUR helper.
 ```shell

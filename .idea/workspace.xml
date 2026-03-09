@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3de39f0c-1a09-4649-9856-71f07f029a5d" name="Changes" comment="docs: README.md" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;claymorwan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:claymorwan/lncur.git&quot;,
+    &quot;accountId&quot;: &quot;17237a0e-7d64-4cb9-a46f-9f45166649cf&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2uos3r5EThZtf8xOQWuvT4hBrdG" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/media/Programmation/Python/lncur/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lncur" />
+      <recent name="$PROJECT_DIR$/assets/wincur" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3de39f0c-1a09-4649-9856-71f07f029a5d" name="Changes" comment="" />
+      <created>1742926065517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742926065517</updated>
+      <workItem from="1742926066370" duration="96000" />
+      <workItem from="1742926165872" duration="1624000" />
+      <workItem from="1742927793746" duration="4000" />
+      <workItem from="1742927812072" duration="437000" />
+      <workItem from="1742928265053" duration="198000" />
+      <workItem from="1742928478783" duration="169000" />
+      <workItem from="1742928680853" duration="7170000" />
+      <workItem from="1742942931299" duration="199000" />
+      <workItem from="1742999444629" duration="2962000" />
+      <workItem from="1748125469654" duration="50000" />
+      <workItem from="1750184101058" duration="5000" />
+      <workItem from="1750790299509" duration="1952000" />
+      <workItem from="1750937002120" duration="631000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: init">
+      <option name="closed" value="true" />
+      <created>1742936385633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742936385633</updated>
+    </task>
+    <task id="LOCAL-00002" summary="docs: forgot `--onefile` argument at line 88">
+      <option name="closed" value="true" />
+      <created>1742936539053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742936539053</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: Added more file, remove symlinks with pure python instead of shell">
+      <option name="closed" value="true" />
+      <created>1743002548800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743002548801</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: rewrite into python pkg">
+      <option name="closed" value="true" />
+      <created>1750792150999</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750792151000</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docs: README.md">
+      <option name="closed" value="true" />
+      <created>1750937603446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750937603446</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs: README.md">
+      <option name="closed" value="true" />
+      <created>1750937617393</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750937617393</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: init" />
+    <MESSAGE value="docs: forgot `--onefile` argument at line 88" />
+    <MESSAGE value="feat: Added more file, remove symlinks with pure python instead of shell" />
+    <MESSAGE value="chore: rewrite into python pkg" />
+    <MESSAGE value="docs: README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: README.md" />
+  </component>
+</project>
