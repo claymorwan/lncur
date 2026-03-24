@@ -1,9 +1,6 @@
 {
   lib,
   python3Packages,
-
-  # build-system
-  hatch,
 }:
 
 python3Packages.buildPythonApplication rec {
@@ -13,8 +10,8 @@ python3Packages.buildPythonApplication rec {
 
   src = ./../..;
 
-  build-system = [
-    hatch
+  build-system = with python3Packages; [
+    hatchling
   ];
 
   meta = {
