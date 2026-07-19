@@ -17,7 +17,6 @@ def main() -> None:
   elif args.link:
     link()
   elif args.make:
-    # make(args.make)
-    print(args.make)
+    make(args.make)
   else:
     parser.print_help()
