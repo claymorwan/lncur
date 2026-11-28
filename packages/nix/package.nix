@@ -3,12 +3,16 @@
   python3Packages,
 }:
 
+let
+  rootPath = builtins.path { path = ./../..; };
+  pyprojectToml = fromTOML (builtins.readFile "${rootPath}/pyproject.toml");
+in
 python3Packages.buildPythonApplication rec {
-  pname = "lncur";
-  version = "1.1.0";
+  pname = pyprojectToml.project.name;
+  version = pyprojectToml.project.version;
   pyproject = true;
 
-  src = ./../..;
+  src = rootPath;
 
   build-system = with python3Packages; [
     hatchling
